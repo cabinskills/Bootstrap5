@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51d697c1d0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .billing {
+            background: #f4f5f7;
+        }
+        
+        .billing .submit-page {
+            position: relative;
+            width: 100%;
+            padding: 2em;
+            background: #fff;
+            border-radius: 10px;
+        }
+        
+        .billing .submit-page h3 {
+            line-height: 30px;
+            font-size: 24px;
+            color: #1a274e;
+            font-weight: 700;
+            font-family: Jost, sans-serif;
+        }
+        
+        .billing .submit-page label {
+            font-size: 13px;
+            font-weight: 600;
+            color: #455892;
+        }
+        
+        .billing .submit-page label i.req {
+            margin-left: 2px;
+            color: #ff5722;
+        }
+        
+        .billing .submit-page .form-group #bill-form {
+            background: #f9fafc;
+            border: 1px solid #ebedf5;
+            border-radius: 3px;
+            color: #646e77;
+            height: 56px;
+            font-size: 15px;
+            box-shadow: none;
+            padding: 0.5rem 0.75rem;
+        }
+        
+        .billing .submit-page textarea #bill-form {
+            height: 180px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="billing">
+        <div class="container">
+            <div class="row form-submit">
+                <div class="col-lg-8 col-md-12 col-sm-12">
+                    <div class="row m-0">
+                        <div class="submit-page mb-4">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <h3>Billing Details</h3>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Name <i class="req">*</i>
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Email <i class="req">*</i>
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Company Name
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Country <i class="req">*</i>
+                                        </label>
+                                        <select class="form-control">
+                                            <option value-data-select2-id="2">&nbsp;</option>
+                                            <option value="1">United Kingdom</option>
+                                            <option value="2">United States</option>
+                                            <option value="3">India</option>
+                                            <option value="4">Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Company Name <i class="req">*</i>
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Apartment
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Town / City <i class="req">*</i>
+                                        </label>
+                                        <select class="form-control">
+                                            <option value-data-select2-id="2">&nbsp;</option>
+                                            <option value="1">Mumbai</option>
+                                            <option value="2">Chennai</option>
+                                            <option value="3">Cochin</option>
+                                            <option value="4">Hyderabad</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            State <i class="req">*</i>
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Postcode / Zip <i class="req">*</i>
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Phone <i class="req">*</i>
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <div class="form-group">
+                                        <label>
+                                            Landline
+                                        </label>
+                                        <input type="text" class="form-control" id="bill-form">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12 col-md-12 col-sm-12">
+                                    <label>Additional Information</label>
+                                    <textarea class="form-control" id="bill-form"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-sm-12"></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

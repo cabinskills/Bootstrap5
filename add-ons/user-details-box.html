@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51d697c1d0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+.prd-sidebar-2 {
+    padding: 1.5rem;
+    background-color: #ebebeb;
+    border-radius: 8px;
+}
+
+.prd-portfolio-img {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem auto 0.5rem;
+}
+
+.prd-portfolio a>img {
+    width: 80px;
+    height: 80px;
+}
+
+.circle {
+    border-radius: 100%;
+}
+
+.verified-profile {
+    position: absolute;
+    right: -9px;
+}
+
+.prd-profile-title {
+    text-align: center;
+}
+
+.prd-profile-title h4 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1;
+    color: #1a274e;
+    font-weight: 700;
+}
+
+.prd-profile-title span {
+    font-size: 14px;
+    opacity: 0.8;
+    color: #2d4379;
+}
+
+.prd-profile-icons {
+    text-align: center;
+}
+
+ul.profile-icons-ul {
+    margin: 0;
+    min-height: 107px;
+    margin-top: 1rem;
+    text-align: center;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+ul.profile-icons-ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.prd-profile-sales-info ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prd-profile-sales-info ul li {
+    flex: 0 0 33.333333%;
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 800;
+    color: #252e42;
+}
+
+.profile-sales-count {
+    line-height: 1;
+}
+
+.profile-sales-reviews {
+    line-height: 1;
+}
+
+.profile-sales-comments {
+    line-height: 1;
+}
+
+.profile-sales-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6d7a98;
+}
+
+.profile-sales-reviews {
+    color: #76bb25;
+}
+
+.profile-reviews-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6d7a98;
+}
+
+.profile-comments-desc {
+    font-weight: 400;
+    font-size: 14px;
+    color: #6d7a98;
+}
+
+.profile-btn {
+    display: inline-block;
+    width: 100%;
+    padding: 2rem 0 0.5rem;
+}
+
+.profile-link {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: #40a5d5;
+    border-radius: 4px;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div class="sidebar-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="prd-sidebar-2 mb-4 mt-4">
+                        <div class="prd-portfolio-img">
+                            <a href="#">
+                                <img src="images/profile-img.png" class="img-fluid circle">
+                            </a>
+                            <div class="verified-profile">
+                                <img src="images/verified.svg" class="img-fluid" width="15">
+                            </div>
+                        </div>
+                        <div class="prd-profile-title">
+                            <h4>Digital Studio</h4>
+                            <span>Member since Sep 2016</span>
+                        </div>
+                        <div class="prd-profile-icons">
+                            <ul class="profile-icons-ul">
+                                <li>
+                                    <img src="images/1st.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/2year.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/3year.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/gold-medal.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/golden.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/green-elite.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/platinum.svg" class="img-avater rounded" width="40">
+                                </li>
+                                <li>
+                                    <img src="images/smart.svg" class="img-avater rounded" width="40">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="prd-profile-sales-info">
+                            <ul>
+                                <li>
+                                    <div class="profile-sales-count">
+                                        <span>102</span>K
+                                    </div>
+                                    <span class="profile-sales-desc">Sales</span>
+                                </li>
+                                <li>
+                                    <div class="profile-sales-reviews">
+                                        <span>4.7</span>
+                                    </div>
+                                    <span class="profile-reviews-desc">Reviews</span>
+                                </li>
+                                <li>
+                                    <div class="profile-sales-comments">
+                                        <span>152</span>
+                                    </div>
+                                    <span class="profile-comments-desc">Comments</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="profile-btn">
+                            <a href="#" class="profile-link">View Portfolio</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

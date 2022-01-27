@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51d697c1d0.js" crossorigin="anonymous"></script>
+    <title>Codingdeals.com | Bootstrap 5 Blocks</title>
+    <style>
+        .navbar-1 {
+            background: #999999;
+        }
+        
+        .sticky {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1;
+        }
+        
+        .navbar-1 .navbar .navbar-brand {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            color: #fff;
+            margin: 0px;
+        }
+        
+        .navbar-1 .navbar .navbar-brand:hover {
+            color: #000;
+        }
+        
+        .navbar-1 .navbar-expand-lg .navbar-nav {
+            margin: 0;
+            margin-right: auto !important;
+        }
+        
+        @media only screen and (min-width:1024px) {
+            .navbar-1 .navbar-expand-lg .navbar-nav {
+                margin-left: 35px;
+            }
+        }
+        
+        .navbar-1 .navbar-expand-lg .navbar-nav .nav-item {
+            margin-right: 30px;
+            font-size: 15px;
+        }
+        
+        .navbar-1 .navbar-dark .navbar-nav .nav-item .nav-link {
+            color: #fff;
+        }
+        
+        .navbar-1 .navbar-dark .navbar-toggler .menu-icon {
+            display: inline-block;
+            width: 1.5em;
+            height: 1.5em;
+            font-size: 18px;
+            color: #fff;
+        }
+        
+        h1 {
+            margin-top: 5px;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .card-img {
+            height: 200px;
+            width: 300px;
+        }
+        
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 0 20px 0 rgb(62 28 131 / 10%);
+            border: none;
+            width: 300px;
+        }
+        
+        .card-body {
+            background-color: #d4d4d4;
+        }
+        
+        .card-title {
+            font-size: 16px;
+        }
+        
+        .block-heading {
+            background-color: #ccc;
+            padding: 10px;
+            margin: 78px 13px;
+        }
+        
+        body {
+            background-color: #d4d4d4;
+        }
+        
+        .container {
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-1" id="navbar">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12" style="padding: 0px;">
+                    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #999999;">
+                        <a class="navbar-brand" href="#"> Blocks </a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border: none; margin-top: 8px;
+                            padding: 0px;">
+                            <span class="menu-icon"><i class="fas fa-bars"></i></span>
+                            </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="#navbar-ds">Navbar</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hero-ds">Hero</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features-ds">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#shopping-cart-ds">Shopping cart</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#body-ds">Body</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#addons-ds">Add ons</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#FAQ-ds">FAQ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#form-ds">Forms</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#gallery-ds">Gallery</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#footer-ds">Footer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- navbar designs -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="navbar-ds"></a>
+                <h1 class="block-heading">Navbar Designs</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/single-sticky.html" target="_blank">
+                            <h1 class="card-title">Single Sticky navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-2.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/double-fixed.html" target="_blank">
+                            <h1 class="card-title">Double navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-3.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/bg-dark.html" target="_blank">
+                            <h1 class="card-title">Bg Dark navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-4.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/bg-transparent.html" target="_blank">
+                            <h1 class="card-title">Bg Transparent navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-5.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/center-logo.html" target="_blank">
+                            <h1 class="card-title">Centered Logo navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-6.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/center-aligned.html" target="_blank">
+                            <h1 class="card-title">Center aligned navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/navbar-img/n-7.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../navbars/right-aligned.html" target="_blank">
+                            <h1 class="card-title">Right aligned navbar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="hero-ds"></a>
+                <h1 class="block-heading">Hero Designs</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/header-img/hd-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../headers/plain-left-align.html" target="_blank">
+                            <h1 class="card-title">Plain Left Aligned</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/header-img/hd-2.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../headers/plain-center-align.html" target="_blank">
+                            <h1 class="card-title">Plain Center Aligned</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/header-img/hd-3.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../headers/left-img.html" target="_blank">
+                            <h1 class="card-title">Plain with Left aligned Image</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/header-img/hd-4.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../headers/right-img.html" target="_blank">
+                            <h1 class="card-title">Plain with Right aligned Image</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/header-img/hd-5.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../headers/hd-with-search.html" target="_blank">
+                            <h1 class="card-title">Header with search form</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="features-ds"></a>
+                <h1 class="block-heading">Features Designs</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/simple-bts-style.html" target="_blank">
+                            <h1 class="card-title">Simple Bootstrap Style Features</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-2.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/2-cards.html" target="_blank">
+                            <h1 class="card-title">2 Cards</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-3.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/3-cards.html" target="_blank">
+                            <h1 class="card-title">3 Cards</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-4.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/4-cards.html" target="_blank">
+                            <h1 class="card-title">4 Cards</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-5.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/6-cards.html" target="_blank">
+                            <h1 class="card-title">6 Cards</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-7.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/pricing-plan.html" target="_blank">
+                            <h1 class="card-title">Pricing plan (4 Plan Layout)</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-9.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/pricing-plan-2.html" target="_blank">
+                            <h1 class="card-title">Pricing plan (2 Plan Layout)</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/features-img/fs-8.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../features/portfolio-bar.html" target="_blank">
+                            <h1 class="card-title">Portfolio bar</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="shopping-cart-ds"></a>
+                <h1 class="block-heading">Shopping cart Designs</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/shopping-img/s-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../shopping/listing-1.html" target="_blank">
+                            <h1 class="card-title">Shopping cart one</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/shopping-img/s-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../shopping/listing-2.html" target="_blank">
+                            <h1 class="card-title">Shopping cart two</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/shopping-img/s-3.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../shopping/listing-3.html" target="_blank">
+                            <h1 class="card-title">Shopping cart Three</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Body -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="body-ds"></a>
+                <h1 class="block-heading">Body Designs</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/body-img/bd-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../body/list-wrap-left-img.html" target="_blank">
+                            <h1 class="card-title">List wrap with Left aligned Image</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/body-img/bd-2.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../body/list-wrap-right-img.html" target="_blank">
+                            <h1 class="card-title">List wrap with Right aligned Image</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- add ons -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="addons-ds"></a>
+                <h1 class="block-heading">Add ons</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/checkbox.html" target="_blank">
+                            <h1 class="card-title">Checkbox</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-2.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/bill-box.html" target="_blank">
+                            <h1 class="card-title">Bill summary box</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-6.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/user-details-box.html" target="_blank">
+                            <h1 class="card-title">User Details</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="FAQ-ds"></a>
+                <h1 class="block-heading">FAQ</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-3.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/collapse-panel.html" target="_blank">
+                            <h1 class="card-title">Collapse panel</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-5.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/faq.html" target="_blank">
+                            <h1 class="card-title">FAQ</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forms -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="form-ds"></a>
+                <h1 class="block-heading">Forms</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-8.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/contact-block.html" target="_blank">
+                            <h1 class="card-title">Contact form</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-4.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/billing-form.html" target="_blank">
+                            <h1 class="card-title">Billing Form</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="gallery-ds"></a>
+                <h1 class="block-heading">Gallery</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-7.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/team-gallery.html" target="_blank">
+                            <h1 class="card-title">Team gallery</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-9.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/gallery-3b.html" target="_blank">
+                            <h1 class="card-title">Gallery - 3 Box Layout</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/addons-img/ao-10.png" class="card-img-top" alt="..." />
+                    <div class="card-body">
+                        <a href="../add-ons/rhomba-gallery.html" target="_blank">
+                            <h1 class="card-title">Gallery - Dark Themed Rhomba Layout</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <a id="footer-ds"></a>
+                <h1 class="block-heading">Footer Designs</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/footer-img/ft-2.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../footers/footer-one.html" target="_blank">
+                            <h1 class="card-title">Dark footer one</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/footer-img/ft-1.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../footers/footer-two.html" target="_blank">
+                            <h1 class="card-title">Dark footer two</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/footer-img/ft-3.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../footers/footer-three.html" target="_blank">
+                            <h1 class="card-title">Dark footer three</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6" style="display: flex; justify-content: center">
+                <div class="card">
+                    <img src="images/footer-img/ft-4.png" class="card-img" alt="..." />
+                    <div class="card-body">
+                        <a href="../footers/footer-four.html" target="_blank">
+                            <h1 class="card-title">Light footer</h1>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

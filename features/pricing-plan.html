@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51d697c1d0.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        .pricing {
+            background-color: #f9f9f9;
+            padding-top: 100px;
+            padding-bottom: 100px;
+            position: relative;
+        }
+        
+        .pr-title {
+            margin-bottom: 50px;
+            text-align: center;
+            padding: 0 300px;
+            position: relative;
+            /* z-index: 5; */
+        }
+        
+        @media (max-width: 768px) {
+            .pr-title {
+                padding: 0px 10px;
+                margin-bottom: 60px;
+            }
+        }
+        
+        .pr-title h3 {
+            font-size: 15px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            color: #ff6b81;
+        }
+        
+        .pr-title h2 {
+            font-size: 34px;
+            margin-bottom: 25px;
+            line-height: 42px;
+            text-transform: capitalize;
+            position: relative;
+            font-weight: 800;
+        }
+        
+        .pr-title p {
+            font-size: 15px;
+            color: #888;
+        }
+        
+        .pr-item {
+            border: 1px solid #eee;
+            border-radius: 10px;
+            margin-top: 30px;
+            background-color: #fff;
+            /* -webkit-transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s; */
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0s;
+        }
+        
+        .pr-item-title {
+            padding: 25px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .pr-item-title h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        
+        .pr-item-title p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        
+        .price h2 {
+            font-size: 30px;
+            font-weight: 700;
+            display: inline-block;
+        }
+        
+        .price h2 span {
+            display: inline-block;
+            font-size: 14px;
+            color: #888;
+            font-weight: 400;
+            margin-left: 3px;
+        }
+        
+        .pr-btn a {
+            width: 100%;
+            padding: 12px 30px;
+            font-size: 13px;
+            background-color: #081828;
+            display: inline-block;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            /* z-index: 1; */
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        .pr-btn a:hover {
+            color: #081828;
+            background-color: #fff;
+            border: 1px solid #081828;
+        }
+        
+        .pr-item-content {
+            padding: 25px;
+        }
+        
+        .pr-item-content h4 {
+            font-size: 13px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+        
+        .pr-item-content ul {
+            margin: 0px;
+            padding: 0px;
+            list-style-type: none;
+        }
+        
+        .pr-item-content ul li {
+            position: relative;
+            padding-left: 25px;
+            font-size: 14px;
+            margin-bottom: 13px;
+        }
+        
+        .pr-item-content ul li i {
+            color: #ff6b81;
+            font-size: 14px;
+            position: absolute;
+            left: 0;
+            top: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pricing" id="pricing">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="pr-title">
+                        <h3>PRICING</h3>
+                        <h2>Pricing Plan</h2>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="pr-item">
+                        <div class="pr-item-title">
+                            <h4>Plan One</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2>$12
+                                    <span>/mo</span>
+                                </h2>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#">Buy Plan One</a>
+                            </div>
+                        </div>
+                        <div class="pr-item-content">
+                            <h4>WHAT'S INCLUDED</h4>
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Cras justo odio.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Dapibus ac facilisis in.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Morbi leo risus.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Potenti felis, in cras ligula.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="pr-item">
+                        <div class="pr-item-title">
+                            <h4>Plan Two</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2>$12
+                                    <span>/mo</span>
+                                </h2>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#">Buy Plan Two</a>
+                            </div>
+                        </div>
+                        <div class="pr-item-content">
+                            <h4>WHAT'S INCLUDED</h4>
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Cras justo odio.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Dapibus ac facilisis in.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Morbi leo risus.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Potenti felis, in cras ligula.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="pr-item">
+                        <div class="pr-item-title">
+                            <h4>Plan Three</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2>$12
+                                    <span>/mo</span>
+                                </h2>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#">Buy Plan Three</a>
+                            </div>
+                        </div>
+                        <div class="pr-item-content">
+                            <h4>WHAT'S INCLUDED</h4>
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Cras justo odio.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Dapibus ac facilisis in.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Morbi leo risus.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Potenti felis, in cras ligula.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12">
+                    <div class="pr-item">
+                        <div class="pr-item-title">
+                            <h4>Plan Four</h4>
+                            <p>All the basics for starting a new business</p>
+                            <div class="price">
+                                <h2>$12
+                                    <span>/mo</span>
+                                </h2>
+                            </div>
+                            <div class="pr-btn">
+                                <a href="#">Buy Plan Four</a>
+                            </div>
+                        </div>
+                        <div class="pr-item-content">
+                            <h4>WHAT'S INCLUDED</h4>
+                            <ul>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Cras justo odio.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Dapibus ac facilisis in.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Morbi leo risus.
+                                </li>
+                                <li>
+                                    <i class="far fa-check-circle"></i> Potenti felis, in cras ligula.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

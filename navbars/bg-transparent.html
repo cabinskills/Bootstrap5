@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/51d697c1d0.js" crossorigin="anonymous"></script>
+    <title>BG Image Header</title>
+    <style>
+        body {
+            width: 100%;
+            height: 500px;
+            background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .navbar-4 {
+            background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0) 100%);
+        }
+        
+        .navbar-4 .navbar .navbar-brand {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+            color: #fff;
+            margin: 0px;
+        }
+        
+        .navbar-4 .navbar-expand-lg .navbar-nav {
+            margin: 0;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+        
+        .navbar-4 .navbar {
+            margin-bottom: 10px;
+            margin-top: 10px;
+        }
+        
+        .navbar-4 .navbar-nav .nav-item {
+            margin-right: 30px;
+            font-size: 15px;
+        }
+        
+        .navbar-4 .navbar-nav .nav-item a {
+            color: #fff;
+        }
+        
+        .navbar-4 .navbar-nav .nav-item a:hover {
+            color: #cfcccc;
+        }
+        
+        .navbar-4 .hero {
+            position: relative;
+            padding: 160px 0 45px 0;
+        }
+        
+        .navbar-4 .hero .hero-content {
+            border-radius: 0;
+            position: relative;
+            text-align: left;
+        }
+        
+        @media (max-width:768px) {
+            .navbar-4 .hero .hero-content {
+                text-align: center;
+            }
+        }
+        
+        .navbar-4 .hero .hero-content h1 {
+            font-size: 38px;
+            font-weight: 800;
+            line-height: 50px;
+            color: #fff;
+        }
+        
+        .navbar-4 .hero .hero-content p {
+            margin-top: 30px;
+            font-size: 15px;
+            color: #fff;
+        }
+        
+        .navbar-4 .hero .hero-content .hero-btn-group {
+            margin-top: 40px;
+        }
+        
+        .navbar-4 .hero .hero-content .hero-btn-group .download-btn {
+            background-color: #fff;
+            color: #000;
+            margin-right: 12px;
+            display: inline-block;
+            text-transform: capitalize;
+            font-size: 15px;
+            font-weight: 600;
+            padding: 13px 30px;
+            transition: 0.2s;
+            border-radius: 5px;
+            position: relative;
+            /* z-index: 1; */
+            overflow: hidden;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        
+        .navbar-4 .hero .hero-content .hero-btn-group i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="#">Your Logo</a>
+                        <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+                            </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#features">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#about-us">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#our-team">Our Team</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#pricing">Pricing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12 col-md-12 col-12">
+                        <div class="hero-content">
+                            <h1>Banner Text Will Be Shown Here.</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius</p>
+                            <div class="hero-btn-group">
+                                <a href="#" class="download-btn"><i class="fab fa-app-store"></i> App Store</a>
+                                <a href="#" class="download-btn"><i class="fab fa-google-play"></i> Play Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
